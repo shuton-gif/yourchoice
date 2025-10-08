@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.red-section {
+    min-height: 100vh;
+    background-image: url('redBg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.logo-container img {
+    max-width: 300px;
+    height: auto;
+}
+
+.live-title {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    margin-bottom: 3rem !important;
+}
+
+.concert-links {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.concert-link {
+    margin-bottom: 1.5rem;
+}
+
+.concert-link a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: opacity 0.3s ease;
+}
+
+.concert-link a:hover {
+    opacity: 0.8;
+}
+
+.btn.btn-light {
+    background-color: white;
+    border: none;
+    color: #dc3545 !important;
+    font-weight: 700;
+    padding: 12px 40px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-light:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.white-section {
+    min-height: 100vh;
+    background-color: white;
+    padding: 5rem 0;
+}
+
+.nav-menu {
+    padding-left: 2rem;
+}
+
+.nav-item {
+    margin-bottom: 2rem;
+}
+
+.nav-item a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-weight: 700;
+    color: #dc3545 !important;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item a:hover {
+    opacity: 0.7;
+}
+
+/* Social icons styling */
+.social-icons {
+    margin-top: 3rem;
+    padding-left: 0;
+}
+
+.social-icons a {
+    color: #dc3545 !important;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar toggler styling */
+.navbar-toggler {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Off-canvas styling */
+.offcanvas.bg-danger {
+    background-color: white !important;
+    width: 100% !important;
+}
+
+.offcanvas .nav-menu {
+    padding: 2rem;
+}
+
+.offcanvas .nav-item a {
+    font-size: 1.5rem;
+    color: red !important;
+}
+
+.offcanvas-header {
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.offcanvas-body {
+    padding: 1rem 0;
+}
+
+.btn-close-white {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    width: 70px !important;
+    height: 70px !important;
+    background-image: url('redBg.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none !important;
+    border-radius: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-close-white:hover {
+    opacity: 0.8;
+}
+
+.btn-close-white::before {
+    content: "×";
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .live-title {
+        font-size: 3rem;
+    }
+    
+    .logo-container img {
+        max-width: 250px;
+    }
+    
+    .concert-link a {
+        font-size: 1rem;
+    }
+    
+    .nav-item a {
+        font-size: 1.5rem;
+    }
+    
+    .nav-menu {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .live-title {
+        font-size: 2.5rem;
+    }
+    
+    .logo-container img {
+        max-width: 200px;
+    }
+    
+    .concert-link a {
+        font-size: 0.9rem;
+    }
+    
+    .nav-item a {
+        font-size: 1.3rem;
+    }
+}
